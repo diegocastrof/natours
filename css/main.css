@@ -143,6 +143,47 @@ body {
           animation: moveInLeft 1s ease-out;
 }
 
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  display: inline-block;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-mb-sm {
+  margin-bottom: 2rem;
+}
+
+.u-mb-lg {
+  margin-bottom: 5rem;
+}
+
+.u-mb-xl {
+  margin-bottom: 10rem;
+}
+
+.u-mt-sm {
+  margin-top: 2rem;
+}
+
+.u-mt-lg {
+  margin-top: 5rem;
+}
+
+.u-mt-xl {
+  margin-top: 10rem;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -204,7 +245,6 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto;
-  background-color: #eee;
 }
 
 .row:not(:last-child) {
@@ -218,7 +258,6 @@ body {
 }
 
 .row [class^="col-"] {
-  background-color: orangered;
   float: left;
 }
 
@@ -252,14 +291,13 @@ body {
 
 .header {
   height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   position: relative;
-  margin-bottom: 5rem;
 }
 
 .header .logo-box {
@@ -279,5 +317,12 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.section-about {
+  padding-top: 20%;
+  margin-top: -20%;
+  background-color: #f7f7f7;
+  padding-bottom: 25%;
 }
 /*# sourceMappingURL=main.css.map */

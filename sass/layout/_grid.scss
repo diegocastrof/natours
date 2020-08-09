@@ -1,7 +1,6 @@
 .row {
   max-width: $grid-width;
   margin: 0 auto;
-  background-color: #eee;
   
   // selecciona TODOS menos el last child
   &:not(:last-child) {
@@ -13,7 +12,6 @@
   
   // selecciona todas las clases que comienzan por col- 
   [class^="col-"] {
-    background-color: orangered;
     float: left;
     &:not(:last-child) {
       margin-right: $h-gutter;
