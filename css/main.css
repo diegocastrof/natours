@@ -416,7 +416,13 @@ body {
 .section-about {
   padding-top: 20%;
   margin-top: -20%;
-  background-color: #f7f7f7;
-  padding-bottom: 25%;
+  background-color: #333;
+  padding-bottom: 5rem;
+}
+
+.section-tours {
+  background-color: #333;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
 }
 /*# sourceMappingURL=main.css.map */
