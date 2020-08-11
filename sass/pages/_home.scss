@@ -1,12 +1,24 @@
 .section-about {
   padding-top: 20%;
   margin-top: -20%;
-  background-color: $color-bg-dark;
-  padding-bottom: 5rem;
+  background-color: $color-bg-light;
+  padding-bottom: calc(15% + 13rem);
+}
+
+.section-features {
+  background-image: 
+    linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.6)),  
+    url(../img/nat-4.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 12%, 100% 0%, 100% 85%, 0 100%);
+  padding: 25rem 8rem;
+  margin-top: -15%;
 }
 
 .section-tours {
-  background-color: $color-bg-dark;
-  padding-top: 8rem;
+  background-color: $color-bg-light;
+  margin-top: -15%;
+  padding-top: calc(15% + 12rem);
   padding-bottom: 5rem;
 }

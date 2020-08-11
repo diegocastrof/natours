@@ -35,7 +35,27 @@
 }
 
 .u-p {
-  
+  &t-sm{
+    padding-top: 2rem;
+  }
+
+  &x-sm{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  &x-md{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  &x-lg{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  &x-xl{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   &-sm {
     padding: 2rem;
   }
