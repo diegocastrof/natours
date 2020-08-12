@@ -411,6 +411,27 @@ body {
   border-bottom: 1px solid rgba(183, 183, 183, 0.6);
 }
 
+.card .backside-content {
+  padding-top: 15rem;
+}
+
+.card .backside-content .tour-price {
+  font-size: 5rem;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 8rem;
+}
+
+.card .backside-content .tour-price::before {
+  content: "ONLY";
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: .05;
+}
+
 .card-side {
   position: absolute;
   top: 0;
