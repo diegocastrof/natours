@@ -1,15 +1,85 @@
 .card {
   width: 100%;
-  height: 40rem;
+  height: 50rem;
   border-radius: 0.5rem;
   position: relative;
   perspective: 150rem;
+  -moz-perspective: 150rem;
   
+  // FRONT SIDE 
+  .card-header{
+    
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    position: relative;
+    
+    &--primary{
+      background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.7), rgba($color-primary-dark, 0.7));
+    }
+    &--secondary{
+      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.7), rgba($color-secondary-dark, 0.7));
+    }
+    &--tertiary{
+      background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.7), rgba($color-tertiary-dark, 0.7));
+    }
+
+    &--img {
+      opacity: 0.4;
+      img {
+        width: 100%;
+        display: block;
+        
+      }
+    }
+  }
+  .card-title {
+    position: absolute;
+    top: 30%;
+    right: 2rem;
+    color: $color-white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    .break-primary{
+      background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.6), rgba($color-primary-dark, 0.85));
+    }
+    .break-secondary{
+      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.6), rgba($color-secondary-dark, 0.85));
+    }
+    .break-tertiary{
+      background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.6), rgba($color-tertiary-dark, 0.85));
+    }
+    &-break {
+      display: table;
+      padding: 0 .5rem;
+    }
+  }
+  .card-body {
+    padding: 2.5rem 6rem;
+    
+    .card-list{
+      list-style: none;
+      font-size: 1.5rem;
+      &-item {
+        padding: .9rem;
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba($color-light-grey, $alpha: .6);
+        }
+      }
+    }
+  }
+
+  // BACK SIDE 
+
+  
+
+
+  // sides set up
   &-side {
     position: absolute;
     top: 0;
     left: 0;
-    transition: all .5s ease;
+    transition: all .8s ease-in-out;
     backface-visibility: hidden;
     width: 100%;
     height: 100%;
@@ -19,17 +89,7 @@
       transform: rotateY(-180deg);
     }
   }
-
-  &:hover &-side {
-    &--front {
-      transform: rotateY(-180deg);
-    }
-    &--back {
-      transform: rotateY(-360deg);
-    }
-  }  
-
-  
+  // card background color
   .backbg- {
     &primary { 
       background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
@@ -41,4 +101,16 @@
       background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
     }
   }
+  // cards animations  
+  &:hover &-side {
+    &--front {
+      transform: rotateY(-180deg);
+    }
+    &--back {
+      transform: rotateY(-360deg);
+    }
+  }  
+
+  
+
 }
