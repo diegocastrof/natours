@@ -1,11 +1,12 @@
 .feature-box {
   padding: 3rem 2rem;
   border-radius: 0.25rem;
-  background-color: #d7d7d7;
+  background-color: rgba($color: $color-bg-light, $alpha: .75);
   transition: all 0.5s;
 
   &__icon {
     font-size: 4rem;
+    font-weight: 900 !important;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
     display: inline-block;
     color: transparent;
