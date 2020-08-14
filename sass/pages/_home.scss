@@ -20,5 +20,13 @@
   background-color: $color-bg-light;
   margin-top: -15%;
   padding-top: calc(15% + 12rem);
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
+}
+
+.section-stories{
+  // background-color: $color-bg-light;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+  position: relative;
+  overflow: hidden;
 }
