@@ -198,7 +198,7 @@ body {
 }
 
 .u-mt-sm {
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 
 .u-mt-md {
@@ -827,6 +827,74 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.footer {
+  padding: 10rem 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.footer-links .links-list {
+  list-style: none;
+  display: inline-block;
+  border-top: 1px solid #fff;
+  padding-top: 1rem;
+  width: 78%;
+}
+
+.footer-links .links-list .link-item {
+  display: inline-block;
+}
+
+.footer-links .links-list .link-item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.footer-link, .footer-link:link, .footer-link:visited {
+  color: white;
+  display: inline-block;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-link:hover {
+  -webkit-transform: scale(1.05) translateY(-0.3rem);
+          transform: scale(1.05) translateY(-0.3rem);
+  color: #55c57a;
+}
+
+.footer-text {
+  width: 70%;
+  border-top: 1px solid #fff;
+  padding-top: 1rem;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.footer-text p {
+  text-align: justify;
+}
+
+.footer-text .highlight {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-style: normal;
+  padding: 0 .5rem;
+  display: inline-block;
+}
+
+.footer-text .highlight:hover {
+  -webkit-transform: scale(1.05) translateY(-0.3rem);
+          transform: scale(1.05) translateY(-0.3rem);
+  color: #55c57a;
+  text-transform: none;
+  display: inline-block;
+  padding: 0 .5rem;
 }
 
 .section-about {

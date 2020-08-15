@@ -1,0 +1,72 @@
+.footer {
+  padding: 10rem 0;
+
+  background-color: $color-bg-dark;
+  color: $color-white;
+  font-size: 1.3rem;
+
+  &-links {
+
+    .links-list {
+      list-style: none;
+      display: inline-block;
+      border-top: 1px solid $color-white;
+      padding-top: 1rem;
+      width: 78%;
+      
+      
+      .link-item {
+        display: inline-block;
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &-link {
+
+    &, &:link, &:visited {
+      color: white;
+      display: inline-block;
+      font-family: inherit;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all .3s;
+    }
+    &:hover {
+      transform: scale(1.05) translateY(-.3rem);
+      color: $color-primary;
+    }
+  }
+
+  &-text {
+    width: 70%;
+    border-top: 1px solid $color-white;
+    padding-top: 1rem;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    p {
+      text-align: justify;
+    }
+    
+    
+
+    .highlight {
+      transition: all 0.3s;
+      font-style: normal;
+      padding: 0 .5rem;
+      display: inline-block;
+      
+      &:hover {
+        transform: scale(1.05) translateY(-.3rem);
+        color: $color-primary;
+        text-transform: none;
+        display: inline-block;
+        padding: 0 .5rem;
+      }
+    }
+  }
+
+  
+}
