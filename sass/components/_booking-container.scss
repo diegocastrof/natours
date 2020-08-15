@@ -1,0 +1,13 @@
+.booking-container {
+  width: 85%;
+  margin: 0rem auto;
+  border-radius: 3px;
+  padding-left: 4rem;
+  box-shadow: 0 1rem 2rem rgba($color: $color-black, $alpha: .8);
+  background-image: 
+    linear-gradient(102deg, rgba($color-white, .8) 50%, transparent 65%)
+    ,url(../img/nat-10.jpg);
+  background-size: cover;
+  height: 50rem;  
+
+}
