@@ -38,7 +38,7 @@
         background-color: inherit;
         position: absolute;
         top: -.8rem;
-        transition: all .1s;
+        transition: all .2s;
       }
       &::after {
         content: "";
@@ -48,16 +48,19 @@
         background-color: inherit;
         position: absolute;
         top: .8rem;
-        transition: all .1s;
+        transition: all .2s;
       }
     }
 
     &:hover .menu-close {
+
       &::before {
         top: -1rem;
+        transform: scale(1.05);
       }
       &::after {
         top: 1rem;
+        transform: scale(1.05);
       }
     }
 
@@ -146,6 +149,22 @@
     &::after {
       background-color: #777;
       transform: rotate(-135deg);
+      top: 0;
+    }
+  }
+
+  .nav-toggle:checked:hover + &-menu .menu-close {
+    & {
+      background-color: transparent;
+    }
+    &::before {
+      background-color: #777;
+      transform: rotate(135deg) scale(1.2);
+      top: 0;
+    }
+    &::after {
+      background-color: #777;
+      transform: rotate(-135deg) scale(1.2);
       top: 0;
     }
   }

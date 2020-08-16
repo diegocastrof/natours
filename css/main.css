@@ -1026,8 +1026,8 @@ body {
   background-color: inherit;
   position: absolute;
   top: -.8rem;
-  -webkit-transition: all .1s;
-  transition: all .1s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .navigation-menu .menu-close::after {
@@ -1038,16 +1038,20 @@ body {
   background-color: inherit;
   position: absolute;
   top: .8rem;
-  -webkit-transition: all .1s;
-  transition: all .1s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .navigation-menu:hover .menu-close::before {
   top: -1rem;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .navigation-menu:hover .menu-close::after {
   top: 1rem;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .navigation-background {
@@ -1139,6 +1143,24 @@ body {
   background-color: #777;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
+  top: 0;
+}
+
+.nav-toggle:checked:hover + .navigation-menu .menu-close {
+  background-color: transparent;
+}
+
+.nav-toggle:checked:hover + .navigation-menu .menu-close::before {
+  background-color: #777;
+  -webkit-transform: rotate(135deg) scale(1.2);
+          transform: rotate(135deg) scale(1.2);
+  top: 0;
+}
+
+.nav-toggle:checked:hover + .navigation-menu .menu-close::after {
+  background-color: #777;
+  -webkit-transform: rotate(-135deg) scale(1.2);
+          transform: rotate(-135deg) scale(1.2);
   top: 0;
 }
 
