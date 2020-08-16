@@ -679,6 +679,94 @@ body {
   opacity: 0;
 }
 
+.popup {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0.99);
+  z-index: 5000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.popup-content {
+  width: 70%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.2);
+          transform: translate(-50%, -50%) scale(0.2);
+  overflow: hidden;
+  border-radius: 3px;
+  display: table;
+  -webkit-transition: all .5s .2s ease-in;
+  transition: all .5s .2s ease-in;
+}
+
+.popup-content--left {
+  width: 33.333%;
+  display: table-cell;
+  height: 100%;
+}
+
+.popup-content--right {
+  width: 66.6666%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+}
+
+.popup-text {
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+  font-size: 1.4rem;
+  -webkit-column-rule: 1px solid #b7b7b7;
+          column-rule: 1px solid #b7b7b7;
+  text-align: justify;
+}
+
+.popup-img {
+  display: block;
+  width: 100%;
+}
+
+.popup-close {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.popup-close, .popup-close:link, .popup-close:visited {
+  position: absolute;
+  display: inline-block;
+  top: 3rem;
+  right: 3rem;
+  font-size: 3rem;
+  color: #b7b7b7;
+  text-decoration: none;
+  line-height: 1rem;
+}
+
+.popup-close:hover {
+  color: #55c57a;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup:target .popup-content {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
 .story {
   background-color: rgba(255, 255, 255, 0.7);
   width: 70%;
