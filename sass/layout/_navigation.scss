@@ -1,4 +1,8 @@
 .navigation{
+
+  @include respond(phone) {
+    display: none;
+  }
   position: relative;
 
   .nav-toggle {

@@ -9,6 +9,12 @@
   } 
   &-md { 
     margin-bottom: 5rem;
+    @include respond(tab-port){
+      margin-bottom: 3rem;
+    }
+    @include respond(phone){
+      margin-bottom: 2rem;
+    }
   } 
   &-lg { 
     margin-bottom: 8rem;
@@ -28,6 +34,12 @@
   }
   &-md {
     margin-top: 5rem;
+    @include respond(tab-port){
+      margin-bottom: 3rem;
+    }
+    // @include respond(phone){
+    //   margin-bottom: 1rem;
+    // }
   }
   &-lg {
     margin-top: 8rem;

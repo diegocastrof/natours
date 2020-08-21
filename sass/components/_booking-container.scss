@@ -10,4 +10,13 @@
   background-size: cover;
   height: 50rem;  
 
+  @include respond(phone){
+    padding-left: 0rem;
+    background-image: 
+    linear-gradient(102deg, rgba($color-white, .7) 100%, transparent 65%)
+    ,url(../img/nat-10.jpg);
+    background-size: cover;
+    text-align: center;
+  }
+
 }
