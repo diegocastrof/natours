@@ -5,3 +5,31 @@
     clear: both;
   }
 }
+
+
+// Media Query Managers
+
+//Breakpoints
+
+/*
+  Phone         (phone)       : 600px
+  Tablet Port   (tab-port)    : 900px
+  Tablet Land   (tab-land)    : 1200px
+  Desktop                     : 
+  Big Desktop   (big-desktop) : min 1800px
+*/
+
+@mixin respond ($breakpoint) {
+  @if $breakpoint == phone {
+    @media screen and (max-width: 37.5em) { @content };
+  }
+  @if $breakpoint == tab-port {
+    @media screen and (max-width: 56.25em) { @content };
+  }
+  @if $breakpoint == tab-land {
+    @media screen and (max-width: 75em) { @content };
+  }
+  @if $breakpoint == big-desktop {
+    @media screen and (min-width: 112.5em) { @content };
+  }
+}

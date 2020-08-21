@@ -4,6 +4,11 @@
   background-color: rgba($color: $color-bg-light, $alpha: .75);
   transition: all 0.5s;
 
+  @include respond(tab-land) {
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
   &__icon {
     font-size: 4rem;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);

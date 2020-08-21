@@ -8,6 +8,21 @@ html{
   // rem 10px
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+}
+
+body {
+  padding: 3rem;
+  @include respond(tab-port){
+    padding: 0;
+  }
 }
 img {
   display: inline-block;

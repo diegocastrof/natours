@@ -7,6 +7,13 @@
   padding: 0 5rem;
   transform: skewX(-12deg);
   
+  @include respond(tab-port) {
+    width: 80%;
+  }
+  @include respond(phone) {
+    width: 90%;
+    transform: skewX(0deg);
+  }
   
 
   &-figure {
@@ -24,6 +31,16 @@
     transform: skewX(12deg);
 
     position: relative;
+
+    @include respond(tab-port) {
+      width: 12rem;
+      height: 12rem;
+    }
+    @include respond(phone) {
+      width: 10rem;
+      height: 10rem;
+      transform: skewX(0deg);
+    }
     
     &--img{
       height: 100%;
@@ -49,6 +66,10 @@
   .story-text {
     transform: skewX(12deg);
     padding: 5rem 0;
+
+    @include respond(phone) {
+      transform: skewX(0deg);
+    }
   }
 
   &:hover &-figure--caption {

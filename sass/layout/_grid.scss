@@ -15,10 +15,20 @@
     float: left;
     &:not(:last-child) {
       margin-right: $h-gutter;
+      @include respond(tab-land) {
+        margin-right: 1rem;
+      }
+    }
+    @include respond(tab-land) {
+      width: 100% !important;
+      margin-bottom: $v-gutter;
     }
   }
   .col-1-of-2 {
     width: calc((100% - #{$h-gutter})/2);
+    // @include respond(tab-land) {
+    //   width: calc((100% - 1rem)/2);
+    // }
   }
   .col-1-of-3 {
     width: calc((100% - 2* #{$h-gutter})/3);

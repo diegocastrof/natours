@@ -17,6 +17,11 @@
     top: 5.5rem;
     right: 5.5rem;
 
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
     .menu-close {
      
       & {
@@ -79,6 +84,11 @@
     right: 6rem;
     transition: all .8s ease-out;
     overflow: hidden;
+
+    @include respond(tab-port) {
+      top: 5rem;
+      right: 5rem;
+    }
   }
 
 

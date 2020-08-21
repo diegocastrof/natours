@@ -12,6 +12,9 @@
   } 
   &-lg { 
     margin-bottom: 8rem;
+    @include respond(tab-land){
+      margin-bottom: 3rem;
+    }
   } 
   &-xl { 
     margin-bottom: 10rem;
@@ -50,6 +53,15 @@
   &x-lg{
     padding-left: 8rem;
     padding-right: 8rem;
+
+    @include respond(tab-land) {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+    @include respond(phone) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
   }
   &x-xl{
     padding-left: 8rem;
